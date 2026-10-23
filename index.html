@@ -59,15 +59,15 @@ button{font:inherit}
 
 
 /* Clickable Konata companion */
-#konataBuddy{position:fixed;right:18px;bottom:12px;z-index:12;width:clamp(94px,13vw,158px);padding:0;border:0;background:transparent;cursor:pointer;touch-action:manipulation;filter:drop-shadow(0 7px 13px #0008);transform-origin:bottom center;transition:transform .18s ease,filter .18s ease;-webkit-tap-highlight-color:transparent}
+#konataBuddy{position:fixed;left:18px;bottom:12px;z-index:12;width:clamp(70.5px,9.75vw,118.5px);padding:0;border:0;background:transparent;cursor:pointer;touch-action:manipulation;filter:drop-shadow(0 7px 13px #0008);transform-origin:bottom center;transition:transform .18s ease,filter .18s ease;-webkit-tap-highlight-color:transparent}
 #konataBuddy img{display:block;width:100%;height:auto;object-fit:contain;user-select:none;-webkit-user-drag:none}
 #konataBuddy:hover{transform:translateY(-4px) rotate(-2deg);filter:drop-shadow(0 8px 18px #91a5ff55)}
 #konataBuddy:active{transform:scale(.94) rotate(2deg)}
 #konataBuddy.playing{animation:konata-bop .38s ease}
 @keyframes konata-bop{0%,100%{transform:translateY(0) rotate(0)}35%{transform:translateY(-12px) rotate(-4deg)}70%{transform:translateY(0) rotate(4deg)}}
-#konataHint{position:fixed;right:22px;bottom:clamp(105px,14vw,174px);z-index:12;max-width:190px;padding:8px 11px;border:1px solid #ffffff24;border-radius:12px;background:rgba(12,12,16,.9);color:#eee;font-size:11px;line-height:1.4;opacity:0;transform:translateY(5px);pointer-events:none;transition:opacity .18s,transform .18s;backdrop-filter:blur(8px)}
+#konataHint{position:fixed;left:22px;bottom:clamp(79px,10.5vw,130.5px);z-index:12;max-width:190px;padding:8px 11px;border:1px solid #ffffff24;border-radius:12px;background:rgba(12,12,16,.9);color:#eee;font-size:11px;line-height:1.4;opacity:0;transform:translateY(5px);pointer-events:none;transition:opacity .18s,transform .18s;backdrop-filter:blur(8px)}
 #konataHint.show{opacity:1;transform:translateY(0)}
-@media(max-width:700px){#konataBuddy{right:8px;bottom:8px;width:clamp(84px,26vw,116px)}#konataHint{right:10px;bottom:calc(clamp(84px,26vw,116px) + 16px);max-width:160px;font-size:10px}}
+@media(max-width:700px){#konataBuddy{left:8px;bottom:8px;width:clamp(63px,19.5vw,87px)}#konataHint{left:10px;bottom:calc(clamp(63px,19.5vw,87px) + 12px);max-width:160px;font-size:10px}}
 @media(prefers-reduced-motion:reduce){#konataBuddy,#konataHint{transition:none}#konataBuddy.playing{animation:none}}
 :where(#konataBuddy):focus-visible{outline:3px solid #b8d0ff;outline-offset:4px;border-radius:12px}
 
@@ -99,7 +99,7 @@ button{font:inherit}
 <div class="qa-item"><button class="qa-question" aria-expanded="false"><span>Что за шрифт и как сделать такой же? / What font is this and how to make it?</span><span class="qa-plus">+</span></button><div class="qa-answer"><div><p>Шрифт называется Radiance-Bold. Туториал, как сделать такой же, находится в закрепе моего телеграм-канала.</p><p>This font is Radiance-Bold. You can find the tutorial to recreate it in the pinned message on my Telegram channel.</p></div></div></div>
 </div></section>
 <footer class="bottom"><span>© <b>m1zucvr</b> · made under the stars</span><span><span class="tag">black sky</span><span class="tag">minimal</span><span class="tag">responsive</span></span></footer></div>
-<div id="konataHint" role="status" aria-live="polite">Нажми на Конату! ♪</div><button id="konataBuddy" type="button" aria-label="Нажми на Конату, чтобы услышать случайный звук"><img src="konata-chibi.jpg" alt="Чиби Коната Изуми" draggable="false"></button><div id="toast" role="status" aria-live="polite"></div><button id="backTop" type="button" aria-label="Вернуться наверх" title="Наверх">↑</button>
+<div id="konataHint" role="status" aria-live="polite">Нажми на Конату! ♪</div><button id="konataBuddy" type="button" aria-label="Нажми на Конату, чтобы услышать случайный звук"><img src="konata-chibi.png" alt="Чиби Коната Изуми" draggable="false"></button><div id="toast" role="status" aria-live="polite"></div><button id="backTop" type="button" aria-label="Вернуться наверх" title="Наверх">↑</button>
 <script>
 (()=> {
 const konata=document.getElementById('konataBuddy');
